@@ -14,9 +14,12 @@ By adding ```-batchmode``` as a startup parameter and the client will run as a d
 2. Install via Steam Client, under Tools, as ```Art of the Rail Dedicated Server```
 3. Install via [SteamCMD](https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip)
    1. Run SteamCMD
-   2. Set the desired install directory ```force_install_dir C:\aotrserver```
-   3. Login as anonymous client ```login anonymous```
-   4. Download the files ```app_update 1699670 validate```
+   2. Set the desired install directory 
+      ```force_install_dir C:\aotrserver```
+   4. Login as anonymous client 
+      ```login anonymous```
+   5. Download the files 
+      ```app_update 1699670 validate```
 
 ## Startup Parameters
 
