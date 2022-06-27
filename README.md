@@ -28,7 +28,8 @@ You can use startup parameters in a batch file or shortcut to control how the se
 > :information_source: text containing spaces should be wrapped in ```"``` quote marks to allow parsing, but quote marks are not required for content not containing spaces. So ```-load mysave``` will work just as well as ```-load "mysave"```
 
 > :information_source: the order of parameters does not matter. Their order of action is queued according to their required action
-
+<details>
+   <summary>List of Parameters</summary>
 | Tables | Build | Description |
 | ------------------------------ |:-----------------:|-----------------------------------------------------------------------------------|
 | ```-nosplash``` | Client | Disables startup logo screens |
@@ -47,3 +48,4 @@ You can use startup parameters in a batch file or shortcut to control how the se
 | ```-info``` | Client, Server | Logs system information automatically into console during startup |
 | ```-nomenuscene``` | Client | Menu scene will not be loaded. The menu itself will be loaded, but background will be blank. Speeds up loading times slightly |
 | ```-developer``` | Client | Enables developer systems such as the ingame prefab editor. Note that these may contain bugs and don't always have a lot of documentation |
+{/details>
