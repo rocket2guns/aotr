@@ -29,6 +29,7 @@ You can use startup parameters in a batch file or shortcut to control how the se
 
 | Parameter | Build | Description |
 | ------------------------------ |:-----------------:|-----------------------------------------------------------------------------------|
+| ```-batchmode``` | Client | Forces game client to run as a dedicated server |
 | ```-nosplash``` | Client | Disables startup logo screens |
 | ```-new {x} {y}``` | Client, Server | Generates a new world of dimensions ```{x}``` and ```{y}``` |
 | ```-load {filename}``` | Client, Server | Loads the given filename ```{filename}``` |
