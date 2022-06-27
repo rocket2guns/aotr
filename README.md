@@ -10,13 +10,15 @@ By adding ```-batchmode``` as a startup parameter and the client will run as a d
 
 > :warning: **If using prior to release**: You will need to use a steam key and authenticate, or download from the Itch Store, as steam does not make the application available for anonymous download prior to a game being marked as release.
 
-1. Download from the Itch.Io Store Page
+You have the following options to run a server as a host:
+
+1. Download dedicated server files from the Itch.Io Store Page
 2. Install via Steam Client, under Tools, as ```Art of the Rail Dedicated Server```
 3. Install via [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD)
    1. Run SteamCMD
    2. Set the desired install directory 
       ```force_install_dir C:\aotrserver```
-   3. Login as anonymous client 
+   4. Login as anonymous client 
       ```login anonymous```
    4. Download the files 
       ```app_update 1699670 validate```
