@@ -27,7 +27,7 @@ You can use startup parameters in a batch file or shortcut to control how the se
 > :information_source: the order of parameters does not matter. Their order of action is queued according to their required action
 
 | Tables | Build | Description |
-| ------------------- |:-----------------:|:--------------------------------------------------:|
+| :----------------------------: |:-----------------:|:--------------------------------------------------:|
 | ```-nosplash``` | Client | Disables startup logo screens |
 | ```-new {x} {y}``` | Client, Server | Generates a new world of dimensions ```{x}``` and ```{y}``` |
 | ```-load {filename}``` | Client, Server | Loads the given filename ```{filename}``` |
@@ -37,7 +37,7 @@ You can use startup parameters in a batch file or shortcut to control how the se
 | ```-noauth``` | Client | Disables any authentication methods, such as steam authentication |
 | ```-localfolder "{path}"``` | Client, Server | Executes using the provided ```{path}``` for all local files such as saves, mods, and settings files |
 | ```-name "{name}"``` | Client, Server | Forces the host name to be the provided name, regardless of what is set in the settings file |
-| ```-mods {list of mods} | Client, Server | Disables all mods and then lods on the names of the provided mods. Mod names should be wrapped in quote marks if containing spaces, and each mod name separated by spaces. Such as ```-mods "myfirstmod" "my second mod"``` |
+| ```-mods "{modid}" ...``` | Client, Server | Disables all mods and then lods on the names of the provided mods. Mod names should be wrapped in quote marks if containing spaces, and each mod name separated by spaces. Such as ```-mods "myfirstmod" "my second mod"``` |
 | ```-nosound``` | Client | Disables all sounds, useful mainly for testing. Sounds will not be loaded into memory or executed |
 | ```-noimagegen``` | Client | Disables all image generation. UI images will be empty instead |
 | ```-debug``` | Client, Server | Full logs during game execution, useful for testing and debugging but not recommended during normal game execution as can have an impact on performance |
