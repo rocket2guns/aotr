@@ -46,7 +46,7 @@ You can use startup parameters in a batch file or shortcut to control how the se
 | ```-nomenuscene``` | Client | Menu scene will not be loaded. The menu itself will be loaded, but background will be blank. Speeds up loading times slightly |
 | ```-developer``` | Client | Enables developer systems such as the ingame prefab editor. Note that these may contain bugs and don't always have a lot of documentation |
 
-## Commands
+## Console Commands
 
 You can use a varity of commands using either the ingame console in the game client, or the console when running the game as a dedicated server.
 
