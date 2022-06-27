@@ -27,7 +27,7 @@ You can use startup parameters in a batch file or shortcut to control how the se
 > :information_source: the order of parameters does not matter. Their order of action is queued according to their required action
 
 | Tables | Build | Description |
-| :----------------------------: |:-----------------:|:--------------------------------------------------:|
+| ------------------------------ |:-----------------:|-----------------------------------------------------------------------------------|
 | ```-nosplash``` | Client | Disables startup logo screens |
 | ```-new {x} {y}``` | Client, Server | Generates a new world of dimensions ```{x}``` and ```{y}``` |
 | ```-load {filename}``` | Client, Server | Loads the given filename ```{filename}``` |
