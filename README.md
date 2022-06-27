@@ -51,40 +51,42 @@ You can use startup parameters in a batch file or shortcut to control how the se
 
 You can use a varity of commands using either the ingame console in the game client, or the console when running the game as a dedicated server.
 
+> :information_source: **Question Marks Indicate Optional Variables**: if you see a quotation mark before a command variable it designates that variable as being optional, and does not need to be included for the command to work
+
 | Command | Description |
 | ------------------------------ | ---------------------------------------------------------------------- |
 | ```addcargo {id} {cargotype} {quantity}``` | adds the provided cargo to the object specified in the id |
-| ```addfunds ?{companyid} {quantity}``` | adds funds to the provided company, or current company if no id provided |
-| ```audiopool ?{begin} ?{limit}``` | prints all 'audiopool' to the console |
-| ```audiosources ?{begin} ?{limit}``` | prints all 'audiosources' to the console |
-| ```cargotypes ?{begin} ?{limit}``` | prints all 'cargotypes' to the console |
+| ```addfunds {?companyid} {quantity}``` | adds funds to the provided company, or current company if no id provided |
+| ```audiopool {?begin} {?limit}``` | prints all 'audiopool' to the console |
+| ```audiosources {?begin} {?limit}``` | prints all 'audiosources' to the console |
+| ```cargotypes {?begin} {?limit}``` | prints all 'cargotypes' to the console |
 | ```checksum ``` | returns the game data checksum allowing the comparison of game data between clients |
-| ```cities ?{sortby} ?{count}``` | lists all cities in current game; sort by id', name', area' |
+| ```cities {?sortby} {?count}``` | lists all cities in current game; sort by id', name', area' |
 | ```clear ``` | clears all console text |
 | ```clearcargo {id} {cargotype}``` | clears the provided cargo type |
 | ```clearreports ``` | clears all financial reports |
-| ```clients ?{begin} ?{limit}``` | prints all 'clients' to the console |
-| ```companies ?{begin} ?{limit} ?{sortby}``` | lists all companies in current game; sort by id', name', funds', founded' |
-| ```connect {address} ?{port}``` | attempts to connect to the provided address; no port entered will use default port |
-| ```date ?{date}``` | if provided, sets game date to that provided, if none then displays the current game date |
-| ```debug ?{scope}``` | sets debug mode to scope: none', audio', signal', block', vehicle', line', node', segment', structure', terrain', fps', report', city' |
-| ```delete {id} ?{force}``` | deletes object with given Id |
+| ```clients {?begin} {?limit}``` | prints all 'clients' to the console |
+| ```companies {?begin} {?limit} {?sortby}``` | lists all companies in current game; sort by id', name', funds', founded' |
+| ```connect {address} {?port}``` | attempts to connect to the provided address; no port entered will use default port |
+| ```date {?date}``` | if provided, sets game date to that provided, if none then displays the current game date |
+| ```debug {?scope}``` | sets debug mode to scope: none', audio', signal', block', vehicle', line', node', segment', structure', terrain', fps', report', city' |
+| ```delete {id} {?force}``` | deletes object with given Id |
 | ```disconnect ``` | closes the current network connection to a host, if any |
-| ```enablecheats ?{true/false}``` | sets cheats on or off |
-| ```files ?{begin} ?{limit}``` | prints all 'files' to the console |
+| ```enablecheats {?true/false}``` | sets cheats on or off |
+| ```files {?begin} {?limit}``` | prints all 'files' to the console |
 | ```find {id}``` | centers the camera on the found thing |
 | ```follow {id}``` | sets the camera to follow the found thing |
 | ```generatelanguage {locale}``` | creates a blank language file for provided locale |
-| ```help ?{begin} ?{limit}``` | prints all 'help' to the console |
+| ```help {?begin} {?limit}``` | prints all 'help' to the console |
 | ```helpfile ``` | generates a help file in markdown format |
 | ```kick {clientId}``` | disconnects the client from the game |
-| ```load ?{savename}``` | loads the world with the provided save name; if none uses quick or last save name |
+| ```load {?savename}``` | loads the world with the provided save name; if none uses quick or last save name |
 | ```loadsettings ``` | loads the current settings to file |
 | ```logtoclipboard ``` | copies the content of the console buffer to the system clipboard buffer |
-| ```logtofile ?{logname}``` | exports the content of the console buffer to a log file, using the filename if specified |
-| ```materials ?{begin} ?{limit}``` | prints all 'materials' to the console |
-| ```meshes ?{begin} ?{limit}``` | prints all 'meshes' to the console |
-| ```mods ?{begin} ?{limit}``` | returns the currently loaded mods, including core game data |
+| ```logtofile {?logname}``` | exports the content of the console buffer to a log file, using the filename if specified |
+| ```materials {?begin} {?limit}``` | prints all 'materials' to the console |
+| ```meshes {?begin} {?limit}``` | prints all 'meshes' to the console |
+| ```mods {?begin} {?limit}``` | returns the currently loaded mods, including core game data |
 | ```movetodepot {vehicleid} {depotid}``` | moves vehicle and its children to depot |
 | ```network ``` | returns the current network status |
 | ```new {x} {y}``` | creates a new world of x and y chunks |
@@ -94,24 +96,25 @@ You can use a varity of commands using either the ingame console in the game cli
 | ```quit ``` | immediately quits the game without any prompts |
 | ```resetaudiopool ``` | resets state of audio pool |
 | ```restart ``` | restarts the game completely |
-| ```save ?{savename}``` | saves the current game using the provided save name; if none uses quick or last save name |
+| ```save {?savename}``` | saves the current game using the provided save name; if none uses quick or last save name |
 | ```savesettings ``` | saves the current settings to file |
 | ```say {message}``` | sends a message to all connected players |
 | ```set {setting} {value}``` | sets a game setting and applies it |
 | ```setcargo {id} {cargotype} {quantity}``` | set the provided cargo to the object specified in the id |
 | ```setfilter {true/false}``` | sets audio filter state |
-| ```setfunds ?{companyid} {quantity}``` | set funds for the provided company, or current company if no id provided |
-| ```showfps ?{true/false}``` | sets frames per second display |
-| ```showgrid ?{true/false}``` | sets game grid state |
-| ```showprofiler ?{true/false}``` | sets render info state |
-| ```splineclasses ?{begin} ?{limit}``` | prints all 'splineclasses' to the console |
-| ```starthost ?{port}``` | begins hosting the game on the provided port, or the default if none entered |
-| ```stations ?{sortby} ?{count}``` | lists all stations in current game; sort by id', name', company', revenue' |
+| ```setfunds {?companyid} {quantity}``` | set funds for the provided company, or current company if no id provided |
+| ```showfps {?true/false}``` | sets frames per second display |
+| ```showgrid {?true/false}``` | sets game grid state |
+| ```showprofiler {?true/false}``` | sets render info state |
+| ```splineclasses {?begin} {?limit}``` | prints all 'splineclasses' to the console |
+| ```starthost {?port}``` | begins hosting the game on the provided port, or the default if none entered |
+| ```stations {?sortby} {?count}``` | lists all stations in current game; sort by id', name', company', revenue' |
 | ```stophost ``` | stops hosting |
 | ```systeminfo ``` | prints system information to console |
-| ```threads ?{begin} ?{limit}``` | prints all 'threads' to the console |
-| ```timescale ?{value}``` | sets the game speed scale; no entered value returns current speed |
+| ```threads {?begin} {?limit}``` | prints all 'threads' to the console |
+| ```timescale {?value}``` | sets the game speed scale; no entered value returns current speed |
 | ```unpause ``` | will unpause the game (including for clients) |
 | ```upnp ``` | returns universal plug and play (upnp) state |
-| ```vehicles ?{sortby} ?{count}``` | lists all vehicles in current game; sort by id', name', company', revenue' |
+| ```vehicles {?sortby} {?count}``` | lists all vehicles in current game; sort by id', name', company', revenue' |
 | ```version ``` | returns the game version |
+
